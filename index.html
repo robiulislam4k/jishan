@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+    background-image:url("flowe2.jpg");
+    background-size: cover;
+}
+.back-arrow {
+    align-self: flex-start;
+    margin: 8px 0 0 10px;
+    padding: 0 0 1px 5px;
+    border: 1px solid #ccc;
+    width: 35px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px;
+}
+.back-arrow a {
+    text-decoration: none;
+    width: 100px;
+    font-size: 24px;
+    color: black;
+}
+.back-arrow:hover {
+    background-color: rgb(229, 227, 227);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#container{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   width: 400px;
+   height:460px;
+   margin: 4% 0 0 35%;
+   border:1px solid #ccc;
+   border-radius: 10px;
+   background-size: cover;
+   
+}
+h2{
+    text-align: center;
+}
+#country-code{
+    height:20.5px;
+}
+.n,.t{
+
+  margin:0 0 0 50px;
+}
+.t{
+    width: 250px;
+}
+#mobile-number
+{
+    width:190px;
+}
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="step2.css">
+</head>
+
+<body>
+    <div id='container'>
+        <form action="process_form.php" method="POST">
+
+            <table>
+                <tbody id='bdcolor'>
+                    <tr>
+                        <td>
+                            <div class="back-arrow">
+                                <a href="#">&larr;</a>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2> Create Your New Account</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="first-name" class="n">First name *</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type='text' placeholder="" class="t">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Last-name " class="n">Last name *</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type='text' placeholder="" class="t" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email" class="n">Email *</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type='email' placeholder="" class="t" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password" class="n">Password *</label>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <input type='password' class="t" required>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mobile-number" class="n">Mobile number *</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="country-code" name="country-code" class="n">
+                                <option value="+880">+880</option>
+                            </select>
+                            <input type="tel" id="mobile-number" name="mobile-number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <input type="checkbox" id="terms" class="n" name="terms" required>
+
+                                <label for="terms">I agree to the Privacy Policy, Terms of Use</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style='box-sizing:border-box'>
+                                <input type="checkbox" id="marketing" name="marketing" class="n">
+                                <label for="marketing">I agree to receive marketing notifications</label>
+                            </div>
+
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" class="n">Continue</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
